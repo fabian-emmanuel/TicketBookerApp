@@ -1,6 +1,7 @@
 import 'package:booktickets/screens/hotel_screen.dart';
 import 'package:booktickets/screens/tickets_view.dart';
 import 'package:booktickets/utils/app_info_list.dart';
+import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
             child: Column(
               children: [
                 const Gap(50),
@@ -32,10 +33,10 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     Container(
-                      width: 50,
-                      height: 50,
+                      width: AppLayout.getWidth(50),
+                      height: AppLayout.getHeight(50),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(AppLayout.getHeight(10)),
                         image: const DecorationImage(
                           fit: BoxFit.cover,
                             image: AssetImage("assets/images/img_1.png")
@@ -46,10 +47,10 @@ class HomeScreen extends StatelessWidget {
                 ),
                 const Gap(30),
                 Container(
-                  padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+                  padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(15), horizontal: AppLayout.getHeight(15)),
                   decoration: BoxDecoration(
                     color: Styles.bgSec,
-                    borderRadius: BorderRadius.circular(10)
+                    borderRadius: BorderRadius.circular(AppLayout.getHeight(10))
                   ),
                   child: Row(
                     children: [

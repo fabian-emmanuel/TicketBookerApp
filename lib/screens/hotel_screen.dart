@@ -12,20 +12,20 @@ class HotelScreen extends StatelessWidget {
     final size = AppLayout.getSize(context);
     return Container(
       width: size.width*0.43,
-      height: 340,
-      margin: const EdgeInsets.only(left: 20),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      height: AppLayout.getHeight(340),
+      margin: EdgeInsets.only(left: AppLayout.getHeight(20)),
+      padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(10), vertical: AppLayout.getHeight(10)),
       decoration: BoxDecoration(
         color: Styles.secondary,
-        borderRadius: BorderRadius.circular(20)
+        borderRadius: BorderRadius.circular(AppLayout.getHeight(20))
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 190,
+            height: AppLayout.getHeight(190),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(AppLayout.getHeight(15)),
               color: Styles.primary,
               image: DecorationImage(
                 fit: BoxFit.cover,
