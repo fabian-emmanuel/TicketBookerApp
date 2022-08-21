@@ -15,6 +15,7 @@ class Styles{
   static Color iconColor = Colors.grey.shade500;
   static Color white = Colors.white;
   static Color red = Colors.red.shade300;
+  static Color greyShade5 = Colors.grey.shade500;
 
   static TextStyle textStyle = TextStyle(fontSize: 16, color: textColor, fontWeight: FontWeight.w500);
   static TextStyle textLinkStyle = TextStyle(fontSize: 16, color: secondary, fontWeight: FontWeight.w500);

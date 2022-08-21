@@ -3,6 +3,8 @@ import 'package:booktickets/screens/tickets_view.dart';
 import 'package:booktickets/utils/app_info_list.dart';
 import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_styles.dart';
+import 'package:booktickets/widgets/icon_text_widget.dart';
+import 'package:booktickets/widgets/row_text_widget.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -17,7 +19,7 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
+            padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(20)),
             child: Column(
               children: [
                 const Gap(50),
@@ -46,34 +48,9 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 const Gap(30),
-                Container(
-                  padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(15), horizontal: AppLayout.getHeight(15)),
-                  decoration: BoxDecoration(
-                    color: Styles.bgSec,
-                    borderRadius: BorderRadius.circular(AppLayout.getHeight(10))
-                  ),
-                  child: Row(
-                    children: [
-                      Row(
-                        children: [
-                          Icon(FluentSystemIcons.ic_fluent_search_regular, color: Styles.iconColor),
-                          const Gap(10),
-                          Text("Search", style: Styles.headLine3)
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                AppIconText(icon: FluentSystemIcons.ic_fluent_search_regular, text: "Search", boxColor: Styles.bgSec!),
                 const Gap(40),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("Upcoming Flights", style: Styles.headLine2),
-                    InkWell(
-                        onTap: () => print("You tapped Me!"),
-                        child: Text("view all", style: Styles.textLinkStyle))
-                  ],
-                )
+                const RowTextWidget(bigText: "Upcoming Flights", smallText: "view all"),
               ],
             ),
           ),
@@ -86,17 +63,8 @@ class HomeScreen extends StatelessWidget {
           ),
           const Gap(30),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Hotels", style: Styles.headLine2),
-                InkWell(
-                    onTap: () => print("You tapped Me!"),
-                    child: Text("view all", style: Styles.textLinkStyle))
-              ],
-            ),
-          ),
+              padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(20)),
+              child: const RowTextWidget(bigText: "Hotels", smallText: "view all")),
           const Gap(15),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,

@@ -17,7 +17,7 @@ class HotelScreen extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(10), vertical: AppLayout.getHeight(10)),
       decoration: BoxDecoration(
         color: Styles.secondary,
-        borderRadius: BorderRadius.circular(AppLayout.getHeight(20))
+        borderRadius: BorderRadius.circular(AppLayout.getHeight(25))
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
