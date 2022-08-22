@@ -16,11 +16,12 @@ class Styles{
   static Color white = Colors.white;
   static Color red = Colors.red.shade300;
   static Color greyShade5 = Colors.grey.shade500;
+  static Color greyShade9 = Colors.grey.shade900;
 
   static TextStyle textStyle = TextStyle(fontSize: 16, color: textColor, fontWeight: FontWeight.w500);
   static TextStyle textLinkStyle = TextStyle(fontSize: 16, color: secondary, fontWeight: FontWeight.w500);
   static TextStyle headLine1 = TextStyle(fontSize: 26, color: textColor, fontWeight: FontWeight.bold);
   static TextStyle headLine2 = TextStyle(fontSize: 21, color: textColor, fontWeight: FontWeight.bold);
   static TextStyle headLine3 = TextStyle(fontSize: 17, color: Colors.grey.shade500, fontWeight: FontWeight.w500);
-  static TextStyle headLine4 = TextStyle(fontSize: 14, color: Colors.grey.shade500, fontWeight: FontWeight.w500);
+  static TextStyle headLine4 = TextStyle(fontSize: 15, color: Colors.grey.shade500, fontWeight: FontWeight.w700);
 }

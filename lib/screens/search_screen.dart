@@ -1,6 +1,7 @@
 import 'package:booktickets/screens/hotel_screen.dart';
 import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_styles.dart';
+import 'package:booktickets/widgets/app_tabs_widget.dart';
 import 'package:booktickets/widgets/icon_text_widget.dart';
 import 'package:booktickets/widgets/row_text_widget.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
@@ -22,36 +23,7 @@ class SearchScreen extends StatelessWidget {
           Gap(AppLayout.getHeight(40)),
           Text("What are\nyou looking for?", style: Styles.headLine1.copyWith(fontSize: 35)),
           Gap(AppLayout.getHeight(20)),
-          FittedBox(
-            child: Container(
-              padding: EdgeInsets.all(AppLayout.getHeight(3),),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
-                color: Styles.bgSec,
-              ),
-              child: Row(
-                children: [
-                  Container(
-                      padding: EdgeInsets.all(AppLayout.getHeight(10),),
-                      width: size.width*0.44,
-                      decoration: BoxDecoration(
-                      borderRadius: BorderRadius.horizontal(left: Radius.circular(AppLayout.getHeight(50))),
-                      color: Styles.boxColor,
-                    ),
-                      child: Center(child: Text("Airline Tickets", style: Styles.textStyle)),
-                  ),
-                  Container(
-                      padding: EdgeInsets.all(AppLayout.getHeight(10),),
-                      width: size.width*0.44,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.horizontal(right: Radius.circular(AppLayout.getHeight(50))),
-                        color: Styles.bgSec,
-                      ),
-                      child: Center(child: Text("Hotels", style: Styles.textStyle))),
-                ],
-              ),
-            ),
-          ),
+          const AppTabsWidget(leftText: "Airline Tickets", rightText: "Hotels"),
           Gap(AppLayout.getHeight(20)),
           AppIconText(icon: Icons.flight_takeoff_outlined, text: "Departure", boxColor: Styles.boxColor!),
           Gap(AppLayout.getHeight(20)),
