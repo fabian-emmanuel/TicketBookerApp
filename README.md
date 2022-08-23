@@ -2,10 +2,8 @@
 
 A Simple Ticket Booking App.
 # TicketBookerApp
-
-![Alt text](/img/home1.png?raw=true=50x100 "Home Screen")
-![Alt text](/img/home2.png?raw=true=50x100 "Home Screen")
-![Alt text](/img/profile.png?raw=true=50x100 "Profile Screen")
-![Alt text](/img/search.png?raw=true=50x100 "Search Screen")
-![Alt text](/img/tickets1.png?raw=true=50x100 "Ticket Screen")
-![Alt text](/img/tickets2.png?raw=true=50x100 "Ticket Screen")
+<img alt="Alt text" height="100" src="/img/home2.png" title="Home Screen" width="50"/>
+<img alt="Alt text" height="100" src="/img/profile.png" title="Profile Screen" width="50"/>
+<img alt="Alt text" height="100" src="/img/search.png" title="Search Screen" width="50"/>
+<img alt="Alt text" height="100" src="/img/tickets1.png" title="Ticket Screen" width="50"/>
+<img alt="Alt text" height="100" src="/img/tickets2.png" title="Ticket Screen" width="50"/>
